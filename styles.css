@@ -85,12 +85,17 @@ img, svg { display: block; max-width: 100%; }
   align-items: center;
   gap: 10px;
   color: var(--blue-800);
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .brand-logo {
   height: 36px;
   width: auto;
+  max-width: 140px;
   display: block;
+  object-fit: contain;
+  flex-shrink: 1;
 }
 
 .nav-links {
@@ -124,6 +129,7 @@ img, svg { display: block; max-width: 100%; }
   border-radius: 999px;
   padding: 3px;
   background: var(--white);
+  flex-shrink: 0;
 }
 
 .lang-btn {
@@ -147,7 +153,13 @@ img, svg { display: block; max-width: 100%; }
 
 @media (max-width: 760px) {
   .nav-links { display: none; }
+
   .header-inner { height: 60px; }
+
+  .brand-logo {
+    height: 28px;
+    max-width: 110px;
+  }
 }
 
 /* ============ HERO ============ */
@@ -274,7 +286,7 @@ body[lang="hi"] .hero-title {
   text-decoration: none;
 }
 
-/* Play Store style download button — official-looking black pill */
+/* Play Store style download button */
 .btn-store {
   display: inline-flex;
   align-items: center;
@@ -327,7 +339,7 @@ body[lang="hi"] .hero-title {
   letter-spacing: -0.01em;
 }
 
-/* Red danger button — used for data deletion */
+/* Red danger button */
 .btn-danger {
   background: #d92638;
   color: var(--white);
@@ -752,24 +764,21 @@ body[lang="hi"] .legal-body h3 { font-family: var(--hindi-serif); line-height: 1
   gap: 24px;
 }
 
-@media (max-width: 720px) {
-  .footer-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 18px;
-  }
-}
-
 .foot-brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .foot-logo {
   height: 34px;
   width: auto;
+  max-width: 130px;
   display: block;
+  object-fit: contain;
+  flex-shrink: 1;
   filter: brightness(1) invert(0);
 }
 
@@ -799,6 +808,21 @@ body[lang="hi"] .legal-body h3 { font-family: var(--hindi-serif); line-height: 1
 }
 
 @media (max-width: 720px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .foot-brand {
+    justify-content: center;
+  }
+
+  .foot-logo {
+    height: 28px;
+    max-width: 110px;
+  }
+
   .foot-meta { align-items: center; }
 }
 
@@ -810,11 +834,11 @@ body[lang="hi"] .legal-body h3 { font-family: var(--hindi-serif); line-height: 1
 }
 
 .hero-copy > * { animation: rise 0.7s ease both; }
-.hero-copy .eyebrow   { animation-delay: 0.05s; }
+.hero-copy .eyebrow    { animation-delay: 0.05s; }
 .hero-copy .hero-title { animation-delay: 0.15s; }
-.hero-copy .hero-sub  { animation-delay: 0.25s; }
-.hero-copy .hero-cta  { animation-delay: 0.35s; }
-.hero-copy .hero-meta { animation-delay: 0.45s; }
+.hero-copy .hero-sub   { animation-delay: 0.25s; }
+.hero-copy .hero-cta   { animation-delay: 0.35s; }
+.hero-copy .hero-meta  { animation-delay: 0.45s; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

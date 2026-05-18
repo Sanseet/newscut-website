@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewsCut — News, in seconds.</title>
+  <meta name="description" content="NewsCut delivers short, sharp news summaries. The world's headlines, cut to the essentials. Available in English and Hindi." />
+  <meta name="theme-color" content="#0b3d91" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NewsCut — News, in seconds." />
+  <meta property="og:description" content="Short, sharp news summaries. English & Hindi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://news.hapliq.com" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="NewsCut home">
+        <img src="1.png" alt="NewsCut" class="brand-logo" />
+        <img src="NewsCutB.png" alt="NewsCut" class="brand-logo" />
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <!-- <a href="#features" data-i18n="nav.features">Features</a> -->
+        <!-- <a href="#languages" data-i18n="nav.languages">Languages</a> -->
+        <a href="#privacy" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="#terms" data-i18n="nav.terms">Terms&Conditions</a>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="hi" aria-pressed="false">हिं</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow" data-i18n="hero.eyebrow">A short-form news platform</div>
+          <h1 class="hero-title">
+            <span data-i18n="hero.title.line1">News,</span>
+            <span class="accent" data-i18n="hero.title.line2">in seconds.</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.sub">
+            The world's biggest stories, cut down to what matters. Curated summaries you can read on a coffee break — never on a scroll spiral.
+          </p>
+          <div class="hero-cta">
+            <a href="#" class="btn-store" aria-label="Download NewsCut on Google Play">
+              <svg class="store-icon" viewBox="0 0 24 27" aria-hidden="true">
+                <path fill="#FFD400" d="M16.81 13.5 4.27 26.04l11.4-6.58z"/>
+                <path fill="#FF3A44" d="M16.81 13.5 19.6 11.9l3.32 1.92c.94.54.94 1.9 0 2.44l-3.32 1.92z"/>
+                <path fill="#00C2FF" d="M.96.43A2 2 0 0 0 .3 1.94v23.13c0 .56.22 1.07.58 1.45L13.7 13.5z"/>
+                <path fill="#00E36A" d="M16.81 13.5 13.7 10.39.96.43c.36-.21.81-.25 1.23-.01L19.6 11.9z"/>
+              </svg>
+              <span class="store-label">
+                <span class="store-small" data-i18n="hero.cta.download.top">Download Now</span>
+                <span class="store-big" data-i18n="hero.cta.download.bottom">Google Play</span>
+              </span>
+            </a>
+          </div>
+          <div class="hero-meta">
+            <div><strong data-i18n="hero.stat1.num">60s</strong><span data-i18n="hero.stat1.label">avg. read time</span></div>
+            <div><strong data-i18n="hero.stat2.num">2</strong><span data-i18n="hero.stat2.label">languages live</span></div>
+            <div><strong data-i18n="hero.stat3.num">24/7</strong><span data-i18n="hero.stat3.label">updates</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="screenshot.png" alt="" class="phone-screenshot" />
+              </div>
+            </div>
+            <!-- Floating tag chip -->
+            <div class="phone-float">
+              <span class="float-dot"></span>
+              <span data-i18n="phone.float">Updated 2 min ago</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <!-- <section id="features" class="section section-features">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2 class="section-title" data-i18n="features.heading">Built for people who don't have time to scroll.</h2>
+        </div>
+
+        <div class="features-list">
+          <article class="feature-row">
+            <div class="feature-num">01</div>
+            <div class="feature-content">
+              <h3 data-i18n="features.f1.title">Sharp summaries</h3>
+              <p data-i18n="features.f1.body">Every story trimmed to its essentials. No filler, no clickbait — just what happened and why it matters.</p>
+            </div>
+            <div class="feature-tag" data-i18n="features.f1.tag">Speed</div>
+          </article>
+
+          <article class="feature-row">
+            <div class="feature-num">02</div>
+            <div class="feature-content">
+              <h3 data-i18n="features.f2.title">Two languages, more coming</h3>
+              <p data-i18n="features.f2.body">English and Hindi today. Bengali, Tamil, Marathi, and more on the roadmap.</p>
+            </div>
+            <div class="feature-tag" data-i18n="features.f2.tag">Reach</div>
+          </article>
+
+          <article class="feature-row">
+            <div class="feature-num">03</div>
+            <div class="feature-content">
+              <h3 data-i18n="features.f3.title">Curated, not chaotic</h3>
+              <p data-i18n="features.f3.body">A clean feed of headlines you'd actually want to read, organized by what's important — not what's loudest.</p>
+            </div>
+            <div class="feature-tag" data-i18n="features.f3.tag">Focus</div>
+          </article>
+
+          <article class="feature-row">
+            <div class="feature-num">04</div>
+            <div class="feature-content">
+              <h3 data-i18n="features.f4.title">Quiet by design</h3>
+              <p data-i18n="features.f4.body">No noisy notifications. No tracking circus. Just news, when you want it.</p>
+            </div>
+            <div class="feature-tag" data-i18n="features.f4.tag">Privacy</div>
+          </article>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ============ LANGUAGES ============ -->
+    <!-- <section id="languages" class="section section-langs">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2 class="section-title" data-i18n="langs.heading">Read in your language.</h2>
+        </div>
+
+        <div class="lang-grid">
+          <div class="lang-card live">
+            <div class="lang-flag">🇬🇧</div>
+            <div class="lang-name">English</div>
+            <div class="lang-status" data-i18n="langs.live">Live now</div>
+          </div>
+          <div class="lang-card live">
+            <div class="lang-flag">🇮🇳</div>
+            <div class="lang-name">हिन्दी</div>
+            <div class="lang-status" data-i18n="langs.live">Live now</div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-flag">🪷</div>
+            <div class="lang-name">বাংলা</div>
+            <div class="lang-status" data-i18n="langs.soon">Coming soon</div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-flag">🌶️</div>
+            <div class="lang-name">தமிழ்</div>
+            <div class="lang-status" data-i18n="langs.soon">Coming soon</div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-flag">🏵️</div>
+            <div class="lang-name">मराठी</div>
+            <div class="lang-status" data-i18n="langs.soon">Coming soon</div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-flag">✨</div>
+            <div class="lang-name" data-i18n="langs.more">More</div>
+            <div class="lang-status" data-i18n="langs.requesting">On the roadmap</div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ============ PRIVACY ============ -->
+    <section id="privacy" class="section section-legal">
+      <div class="container legal-wrap">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2 class="section-title" data-i18n="privacy.heading">Privacy Policy</h2>
+        </div>
+        <p class="legal-meta" data-i18n="privacy.updated">Last updated: 18 May 2026</p>
+
+        <div class="legal-body">
+          <h3 data-i18n="privacy.s1.h">1. Who we are</h3>
+          <p data-i18n="privacy.s1.p">NewsCut ("we", "our", "us") operates news.hapliq.com and provides short-form news summaries. This Privacy Policy explains what information we collect, how we use it, and the choices you have.</p>
+
+          <h3 data-i18n="privacy.s2.h">2. Information we collect</h3>
+          <p data-i18n="privacy.s2.p">When you visit NewsCut, we may collect: (a) basic usage data such as pages viewed, language preference, and device/browser type; (b) anonymous analytics to understand traffic patterns; and (c) any information you voluntarily provide (for example, if you contact us by email).</p>
+
+          <h3 data-i18n="privacy.s3.h">3. How we use information</h3>
+          <p data-i18n="privacy.s3.p">We use information to operate and improve NewsCut, deliver content in your preferred language, monitor performance and security, and respond to messages you send us. We do not sell your personal data.</p>
+
+          <h3 data-i18n="privacy.s4.h">4. Cookies & local storage</h3>
+          <p data-i18n="privacy.s4.p">We use a small number of cookies and local-storage entries — for example, to remember your language choice. You can clear these at any time from your browser settings.</p>
+
+          <h3 data-i18n="privacy.s5.h">5. Third-party services</h3>
+          <p data-i18n="privacy.s5.p">NewsCut is hosted on Vercel and routed via Cloudflare. These providers process basic request data (such as IP address) as part of delivering the site. If we add analytics or other services later, we will update this policy.</p>
+
+          <h3 data-i18n="privacy.s6.h">6. Your rights</h3>
+          <p data-i18n="privacy.s6.p">You can request access to, correction of, or deletion of any personal information we hold about you. See the "Data Deletion" section below for how to make a request.</p>
+
+          <h3 data-i18n="privacy.s7.h">7. Children</h3>
+          <p data-i18n="privacy.s7.p">NewsCut is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with information, contact us and we will delete it.</p>
+
+          <h3 data-i18n="privacy.s8.h">8. Contact</h3>
+          <p data-i18n="privacy.s8.p">Questions about this policy? Email <a href="mailto:newscut@hapliq.com">newscut@hapliq.com</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TERMS ============ -->
+    <section id="terms" class="section section-legal alt">
+      <div class="container legal-wrap">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2 class="section-title" data-i18n="terms.heading">Terms of Service</h2>
+        </div>
+        <p class="legal-meta" data-i18n="terms.updated">Last updated: 18 May 2026</p>
+
+        <div class="legal-body">
+          <h3 data-i18n="terms.s1.h">1. Acceptance</h3>
+          <p data-i18n="terms.s1.p">By using NewsCut, you agree to these Terms. If you do not agree, please do not use the service.</p>
+
+          <h3 data-i18n="terms.s2.h">2. The service</h3>
+          <p data-i18n="terms.s2.p">NewsCut provides short-form summaries of publicly reported news. Summaries are produced for general information only and are not a substitute for full source reporting. We may add, change, or remove features at any time.</p>
+
+          <h3 data-i18n="terms.s3.h">3. Acceptable use</h3>
+          <p data-i18n="terms.s3.p">You agree not to misuse the service — including by attempting to disrupt it, scrape content at scale, reverse-engineer it, or use it to break any law.</p>
+
+          <h3 data-i18n="terms.s4.h">4. Content & accuracy</h3>
+          <p data-i18n="terms.s4.p">We work hard to summarize accurately, but news evolves and human or automated errors can happen. NewsCut is provided "as is" without warranties of any kind. Always consult original sources for critical decisions.</p>
+
+          <h3 data-i18n="terms.s5.h">5. Intellectual property</h3>
+          <p data-i18n="terms.s5.p">The NewsCut name, design, and original written summaries are owned by us. References to source publications remain the property of their respective owners.</p>
+
+          <h3 data-i18n="terms.s6.h">6. Limitation of liability</h3>
+          <p data-i18n="terms.s6.p">To the maximum extent permitted by law, NewsCut and its operators are not liable for indirect, incidental, or consequential damages arising from your use of the service.</p>
+
+          <h3 data-i18n="terms.s7.h">7. Changes</h3>
+          <p data-i18n="terms.s7.p">We may update these Terms from time to time. Continued use of NewsCut after changes means you accept the updated Terms.</p>
+
+          <h3 data-i18n="terms.s8.h">8. Contact</h3>
+          <p data-i18n="terms.s8.p">For questions about these Terms, email <a href="mailto:newscut@hapliq.com">newscut@hapliq.com</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DATA DELETION ============ -->
+    <section id="delete" class="section section-legal">
+      <div class="container legal-wrap">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2 class="section-title" data-i18n="delete.heading">Data Deletion</h2>
+        </div>
+        <p class="legal-meta" data-i18n="delete.updated">Last updated: 18 May 2026</p>
+
+        <div class="legal-body">
+          <h3 data-i18n="delete.s1.h">Request the deletion of your data</h3>
+          <p data-i18n="delete.s1.p">You have the right to request deletion of any personal data NewsCut holds about you. We honor verified requests within 30 days.</p>
+
+          <h3 data-i18n="delete.s2.h">How to request</h3>
+          <p data-i18n="delete.s2.p">Send an email to <a href="mailto:newscut@hapliq.com?subject=Data%20Deletion%20Request">newscut@hapliq.com</a> with the subject line "Data Deletion Request" and include:</p>
+          <ul class="legal-list">
+            <li data-i18n="delete.li1">The email address or identifier associated with your data</li>
+            <li data-i18n="delete.li2">A short description of what you want deleted (e.g. "all data")</li>
+            <li data-i18n="delete.li3">Any context that helps us verify the request is yours</li>
+          </ul>
+
+          <h3 data-i18n="delete.s3.h">What happens next</h3>
+          <p data-i18n="delete.s3.p">We will confirm receipt within 3 business days, verify your identity, and then permanently delete your data from our active systems. Backups containing the data are cycled out within 90 days. Anonymous, aggregated analytics that cannot be tied back to you may be retained.</p>
+
+          <div class="delete-cta">
+            <a href="mailto:newscut@hapliq.com?subject=Data%20Deletion%20Request" class="btn btn-danger" data-i18n="delete.cta">Email a deletion request</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-brand">
+        <img src="1.png" alt="NewsCut" class="foot-logo" />
+        <img src="Newscut.png" alt="NewsCut" class="foot-logo" />
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+        <a href="#terms" data-i18n="nav.terms">Terms</a>
+        <a href="#delete" data-i18n="nav.delete">Data Deletion</a>
+        <a href="mailto:newscut@hapliq.com" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="foot-meta">
+        <span>© <span id="year"></span> All Rights Reserved.</span>
+        <!-- <span data-i18n="foot.tag"></span> -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

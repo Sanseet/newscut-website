@@ -96,6 +96,11 @@ const I18N = {
     "delete.s3.p": "We will confirm receipt within 3 business days, verify your identity, and then permanently delete your data from our active systems. Backups containing the data are cycled out within 90 days. Anonymous, aggregated analytics that cannot be tied back to you may be retained.",
     "delete.cta": "Email a deletion request",
 
+    // English
+"contact.heading": "Contact",
+"contact.intro": "Have a question, suggestion, or just want to say hello? We'd love to hear from you.",
+"contact.label": "Email us at",
+
     "foot.tag": "A Hapliq project"
   },
 
@@ -193,6 +198,11 @@ const I18N = {
     "delete.s3.h": "आगे क्या होगा",
     "delete.s3.p": "हम 3 कार्य दिवसों के भीतर पावती देंगे, आपकी पहचान सत्यापित करेंगे, और फिर आपके डेटा को हमारी सक्रिय प्रणालियों से स्थायी रूप से हटा देंगे। उस डेटा वाले बैकअप 90 दिनों के भीतर हटा दिए जाते हैं। अनाम, समेकित विश्लेषण जो आपसे नहीं जुड़े होते, बरकरार रह सकते हैं।",
     "delete.cta": "हटाने का अनुरोध ईमेल करें",
+
+    // Hindi
+"contact.heading": "संपर्क",
+"contact.intro": "कोई सवाल, सुझाव, या बस हैलो कहना चाहते हैं? हमें आपसे सुनकर खुशी होगी।",
+"contact.label": "हमें ईमेल करें",
 
     "foot.tag": "एक Hapliq प्रोजेक्ट"
   }
